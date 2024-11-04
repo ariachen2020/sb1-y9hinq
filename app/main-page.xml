@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-white">
+    <ActionBar title="八字盤面" class="bg-white">
+        <NavigationButton text="Back" android.systemIcon="ic_menu_back"/>
+        <ActionItem ios.position="right" android.position="actionBar">
+            <StackLayout orientation="horizontal">
+                <Button text="⟨" class="text-blue-500 text-xl"/>
+                <Button text="↻" class="text-blue-500 text-xl"/>
+                <Button text="⟩" class="text-blue-500 text-xl"/>
+            </StackLayout>
+        </ActionItem>
+    </ActionBar>
+
+    <StackLayout>
+        <include src="~/components/tab-strip"/>
+        <include src="~/components/bazi-grid"/>
+    </StackLayout>
+</Page>

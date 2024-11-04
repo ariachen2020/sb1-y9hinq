@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://schemas.nativescript.org/tns.xsd" orientation="horizontal" class="bg-gray-200 p-2">
+    <Button text="基本" tap="{{ onTabTap }}" class="flex-1 p-2 rounded-lg {{ selectedTab === '基本' ? 'bg-white' : '' }}"/>
+    <Button text="命盤" tap="{{ onTabTap }}" class="flex-1 p-2 rounded-lg {{ selectedTab === '命盤' ? 'bg-white' : '' }}"/>
+    <Button text="細盤" tap="{{ onTabTap }}" class="flex-1 p-2 rounded-lg {{ selectedTab === '細盤' ? 'bg-white' : '' }}"/>
+    <Button text="大運" tap="{{ onTabTap }}" class="flex-1 p-2 rounded-lg {{ selectedTab === '大運' ? 'bg-white' : '' }}"/>
+</StackLayout>

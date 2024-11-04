@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GridLayout xmlns="http://schemas.nativescript.org/tns.xsd" rows="auto,auto,auto,auto" columns="*,*,*,*,*" class="m-2">
+    <!-- Headers -->
+    <Label text="日期" row="0" col="0" class="text-center p-2 bg-gray-600 text-white"/>
+    <Label text="時柱" row="0" col="1" class="text-center p-2 bg-gray-600 text-white"/>
+    <Label text="日柱" row="0" col="2" class="text-center p-2 bg-gray-600 text-white"/>
+    <Label text="月柱" row="0" col="3" class="text-center p-2 bg-gray-600 text-white"/>
+    <Label text="年柱" row="0" col="4" class="text-center p-2 bg-gray-600 text-white"/>
+
+    <!-- Main Stars -->
+    <Label text="主星" row="1" col="0" class="text-center p-2 bg-gray-400"/>
+    <Label text="偏財" row="1" col="1" class="text-center p-2 bg-gray-400"/>
+    <Label text="元女" row="1" col="2" class="text-center p-2 bg-gray-400 text-red-500"/>
+    <Label text="正財" row="1" col="3" class="text-center p-2 bg-gray-400"/>
+    <Label text="七殺" row="1" col="4" class="text-center p-2 bg-gray-400"/>
+
+    <!-- Heavenly Stems -->
+    <Label text="天干" row="2" col="0" class="text-center p-2"/>
+    <Label text="{{ heavenlyStems[0] }}" row="2" col="1" class="text-center p-2 text-green-600 text-2xl"/>
+    <Label text="{{ heavenlyStems[1] }}" row="2" col="2" class="text-center p-2 text-orange-500 text-2xl"/>
+    <Label text="{{ heavenlyStems[2] }}" row="2" col="3" class="text-center p-2 text-green-600 text-2xl"/>
+    <Label text="{{ heavenlyStems[3] }}" row="2" col="4" class="text-center p-2 text-red-500 text-2xl"/>
+
+    <!-- Earthly Branches -->
+    <Label text="地支" row="3" col="0" class="text-center p-2 bg-gray-300"/>
+    <Label text="{{ earthlyBranches[0] }}" row="3" col="1" class="text-center p-2 bg-gray-300 text-orange-500 text-2xl"/>
+    <Label text="{{ earthlyBranches[1] }}" row="3" col="2" class="text-center p-2 bg-gray-300 text-red-500 text-2xl"/>
+    <Label text="{{ earthlyBranches[2] }}" row="3" col="3" class="text-center p-2 bg-gray-300 text-amber-700 text-2xl"/>
+    <Label text="{{ earthlyBranches[3] }}" row="3" col="4" class="text-center p-2 bg-gray-300 text-green-600 text-2xl"/>
+</GridLayout>
